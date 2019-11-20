@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Lab </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("pretest").className = "active treeview";
+                document.getElementById("percent").disabled=true;
+                document.getElementById("marks").value='0';
+                document.getElementById("percent").value='0 %';
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="../images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+            <header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:1em;"><b>Computer Science <!-- Write your lab name --> </b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Computer Science</a>
+              </li>
+              <li>
+                <a href="#">linked List<!-- Write your experiment name --> </a>
+              </li>
+              <li class="active">Test</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Test</span>
+
+                    </a>
+                </li>
+                
+                
+               <li class="treeview" id="program">
+                    <a href="result.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Result</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                
+               
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                   Linked List<!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%">  Test </h3>
+                    <p style="font-size:130%; margin-top:2%">
+
+                    <form name="quiz">
+    <p>
+        <b> 1.
+             A linear collection of data elements where the linear node is given by means of pointer is called? <br></b>
+        <blockquote>
+    <input type="radio" name="q1" value="Linked List">Linked List<br>
+    <input type="radio" name="q1" value="Node List">Node List<br>
+    <input type="radio" name="q1" value="Primitive List">Primitive List<br>
+    <input type="radio" name="q1" value="None">None<br>
+    </blockquote>
+
+<p><b>
+<hr>
+ 2.
+ Which of the following operations is performed more efficiently by doubly linked list than by singly linked list?<br></b>
+<blockquote>
+<input type="radio" name="q2" value="Deleting a node whose location in given">Deleting a node whose location in given<br>
+<input type="radio" name="q2" value="Searching of an unsorted list for a given item">Searching of an unsorted list for a given item<br>
+<input type="radio" name="q2" value="Inverting a node after the node with given location">Inverting a node after the node with given location<br>
+<input type="radio" name="q2" value=" Traversing a list to process each node"> Traversing a list to process each node<br>
+</blockquote>
+<p><b>
+<hr>
+3.
+ In linked list each node contain minimum of two fields. One field is data field to store the data second field is?<br></b>
+<blockquote>
+<input type="radio" name="q3" value="Pointer to character">Pointer to character<br>
+<input type="radio" name="q3" value="Pointer to integer">Pointer to integer<br>
+<input type="radio" name="q3" value="Pointer to node">Pointer to node<br>
+<input type="radio" name="q3" value="Node">Node<br>
+</blockquote>
+<p><b>
+<hr>
+ 4.
+   What would be the asymptotic time complexity to add a node at the end of singly linked list, if the pointer is initially pointing to the head of the list?<br></b>
+<blockquote>
+<input type="radio" name="q4" value="O(1)">O(1)<br>
+<input type="radio" name="q4" value="O(n)">O(n)<br>
+<input type="radio" name="q4" value="θ (n)">θ (n)<br>
+<input type="radio" name="q4" value="θ (1)">θ (1)<br>
+</blockquote>
+<p><b>
+<hr>
+ 5.
+ What kind of linked list is best to answer question like “What is the item at position n?”<br></b>
+<blockquote>
+<input type="radio" name="q5" value="Singly linked list">  Singly linked list<br>
+<input type="radio" name="q5" value="Doubly linked list">Doubly linked list<br>
+<input type="radio" name="q5" value="Circular linked list">Circular linked list<br>
+<input type="radio" name="q5" value="Array implementation of linked list">Array implementation of linked list<br>
+</blockquote>
+<p><b>
+<hr>
+
+
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+<input type="reset" value="Clear"><p>
+Number of score out of 5 = <input type= text id="marks" size 5 name= "mark">
+Score in percentage = <input type=text id="percent" size=5 name="percentage"><br>
+
+</form>
+<p>
+
+    <form method="pre" name="Form" onsubmit="" action="">
+</form>
+
+                    </p>
+                    <script>
+    var numQues = 5;
+var numChoi = 4;
+var answers = new Array(15);
+    answers[0] = "Linked List ";
+    answers[1] = "Deleting a node whose location in given";
+    answers[2] = "Pointer to node";
+    answers[3] = "θ (n)";
+    answers[4] = "Array implementation of linked list";
+    
+
+      function getScore(form) {
+
+   var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+    if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score;
+
+
+}
+    </script>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+          
+            </footer>
+        </div>
+        
+    </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+         
+          var owl = $("#owl-demo");
+          owl.owlCarousel({
+              navigation: true,
+              navigationText: [
+                               "<img src='../../../images/left-arrow.png'>",
+                               "<img src='../../../images/right-arrow.png'>"
+                               ],
+              /* autoPlay : 3000,
+              stopOnHover : true */
+          });
+          
+          //owl for partner institutions
+          var owl = $("#owl-partner-institutions");
+          owl.owlCarousel({
+              navigation: true,
+              navigationText: [
+                               "<img src='../../../images/left-arrow.png'>",
+                               "<img src='../../../images/right-arrow.png'>"
+                               ],
+              autoPlay : 3000,
+              stopOnHover : true,
+              items : 8,
+          });
+         
+        
+    
+     //owl for aboutus
+      var owl = $("#owl-aboutus");
+      owl.owlCarousel({
+          navigation: true,
+          singleItem:true
+      });
+     
+    });
+    </script>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

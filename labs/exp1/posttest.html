@@ -1,0 +1,330 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("posttest").className = "active treeview";
+                document.getElementById("marks").disabled=true;
+                document.getElementById("percent").disabled=true;
+                document.getElementById("marks").value='0';
+                document.getElementById("percent").value='0 %';
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="../images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+            <header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:1em;"><b>Digital Electronics</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Digital Electronics</a>
+              </li>
+              <li>
+                <a href="#">Verify the truth table of RS, JK, T and D flip-flops using 3 NAND & NOR gates</a>
+              </li>
+              <li class="active">Post Test</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+               <li class="treeview" id="program">
+                    <a href="result.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Result</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Verify the truth table of RS, JK, T and D flip-flops using 3 NAND & NOR gates<!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Post Test </h3>
+                    <p style="font-size:130%; margin-top:2%">
+
+                    <!--Post Test of experiment -->
+                   <form name="quiz">
+
+    <p>
+        <b>Question 1.
+        <br>  Which of the following is correct for a gated D-type flip-flop? <br></b>
+        <blockquote>
+    <input type="radio" name="q1" value="The Q output is either SET or RESET as soon as the D input goes HIGH or LOW">The Q output is either SET or RESET as soon as the D input goes HIGH or LOW<br>
+    <input type="radio" name="q1" value="The output complement follows the input when enabled">The output complement follows the input when enabled<br>
+    <input type="radio" name="q1" value="Only one of the inputs can be HIGH at a time">Only one of the inputs can be HIGH at a time<br>
+    <input type="radio" name="q1" value="The output toggles if one of the inputs is held HIGH">The output toggles if one of the inputs is held HIGH<br>
+    </blockquote>
+
+<p><b>
+<hr>
+Question 2.
+<br> A basic S-R flip-flop can be constructed by cross-coupling of which basic logic gates? <br></b>
+<blockquote>
+<input type="radio" name="q2" value="AND or OR gates">AND or OR gates<br>
+<input type="radio" name="q2" value="XOR or XNOR gates">XOR or XNOR gates<br>
+<input type="radio" name="q2" value="NOR or NAND gates">NOR or NAND gates<br>
+<input type="radio" name="q2" value="AND or NOR gates"> AND or NOR gates<br>
+</blockquote>
+<p><b>
+<hr>
+Question 3.
+<br>The truth table for an S-R flip-flop has how many VALID entries?<br></b>
+<blockquote>
+<input type="radio" name="q3" value="1">1<br>
+<input type="radio" name="q3" value="2">2<br>
+<input type="radio" name="q3" value="3">3<br>
+<input type="radio" name="q3" value="4">4<br>
+</blockquote>
+<p><b>
+<hr>
+Question 4.
+<br>The flip-flops which has not any invalid states are _____________ <br></b>
+<blockquote>
+<input type="radio" name="q4" value="S-R, J-K, D">S-R, J-K, D<br>
+<input type="radio" name="q4" value="S-R, J-K, T">S-R, J-K, T<br>
+<input type="radio" name="q4" value="J-K, D, S-R">J-K, D, S-R<br>
+<input type="radio" name="q4" value="J-K, D, T">J-K, D, T<br>
+</blockquote>
+<p><b>
+<hr>
+Question 5.
+<br> Both the J-K & the T flip-flop are derived from the basic _____________<br></b>
+<blockquote>
+<input type="radio" name="q5" value=" S-R flip-flop"> S-R flip-flop<br>
+<input type="radio" name="q5" value="S-R latch">S-R latch<br>
+<input type="radio" name="q5" value="D latch">D latch<br>
+<input type="radio" name="q5" value="D flip-flop">D flip-flop<br>
+</blockquote>
+<p><b>
+<hr>
+
+
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+<input type="reset" value="Clear"><p>
+Number of score out of 5 = <input type= text id="marks" size 5 name= "mark">
+Score in percentage = <input type=text id="percent" size=5 name="percentage"><br>
+
+</form>
+<p>
+
+    <form method="pre" name="Form" onsubmit="" action="">
+</form>
+
+                    </p>
+                    <script>
+    var numQues = 5;
+var numChoi = 4;
+var answers = new Array(15);
+    answers[0] = "The Q output is either SET or RESET as soon as the D input goes HIGH or LOW";
+    answers[1] = "NOR or NAND gates";
+    answers[2] = "3";
+    answers[3] = "J-K, D, T";
+    answers[4] = "S-R latch";
+    
+
+      function getScore(form) {
+
+   var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+    if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score;
+
+
+}
+    </script>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Experiment contributed by IITR <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
